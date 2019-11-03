@@ -22,18 +22,18 @@
 		7B5D5BD4D3484FC2A6D3B053 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 636C87B17D554E66BE4CA900 /* Foundation.ttf */; };
 		7BE014778B2B4C23902B4635 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A2B7302363946B39612D0B5 /* FontAwesome5_Brands.ttf */; };
 		819B1EABB61F42F791F88340 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13D46BEDDF6A44E984CF4A34 /* Zocial.ttf */; };
-		9E989FD99F3696CD4BFBB3B5 /* libPods-PontoMaisX-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E280721791879E1C23ACF51B /* libPods-PontoMaisX-tvOS.a */; };
 		9F48CB9B94644F85849D9FC4 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18D3869567214FC296A338BF /* FontAwesome5_Regular.ttf */; };
 		A01ED4D349604BDF870F4E44 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C026730FE594126A6B56090 /* Ionicons.ttf */; };
 		AD20B66C4C7E4C19ABC271AB /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10943621FF324869ABC92217 /* MaterialIcons.ttf */; };
 		B898C86C53C5497D8B79873F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA2937224E947E99F484766 /* FontAwesome.ttf */; };
 		C46DB7815C2F41CF9697A4D9 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BACF3F063FF4B7D8C2EAA07 /* MaterialCommunityIcons.ttf */; };
 		CAB91B84B0534251BA82DF53 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 109EE4DCF38546279396D6FF /* SimpleLineIcons.ttf */; };
-		DADFD1502BE68F54D3BC0B91 /* libPods-PontoMaisX-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55419E6F3996C7D9731B5557 /* libPods-PontoMaisX-tvOSTests.a */; };
-		E2A131806C24FBFFA95EE5AA /* libPods-PontoMaisX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 340091840E5C1F30A43BE5CD /* libPods-PontoMaisX.a */; };
+		DD6C994D2335CCCE467FB33F /* Pods_PontoMaisX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95D7ADEAB1AAA36D0E0931F /* Pods_PontoMaisX.framework */; };
+		E2E54708DD8D223BB4BBA221 /* Pods_PontoMaisX_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE8211B6744FCF84763029C /* Pods_PontoMaisX_tvOS.framework */; };
 		E3770CAFF213432FBC00BFE4 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB6650E470CD441CB91B3D93 /* FontAwesome5_Solid.ttf */; };
-		E3C646776CEFDA258F53A649 /* libPods-PontoMaisXTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 544FD9AC573476E969E10B3D /* libPods-PontoMaisXTests.a */; };
+		E70183CA917B8C3ACFF65940 /* Pods_PontoMaisXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D57203C64FC7594C7D095D /* Pods_PontoMaisXTests.framework */; };
 		E9728693A30C419FB687833F /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7A054C891E443EDA9D1F3E7 /* Entypo.ttf */; };
+		EA4A31F5BA903ADE440F437D /* Pods_PontoMaisX_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D3E84359747C4FB1C2564E /* Pods_PontoMaisX_tvOSTests.framework */; };
 		EBF13B67A7794C14AF7D7DAC /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FDE82C3CD8B4F8288D53E7B /* Fontisto.ttf */; };
 		F53F104BE2A7444792178331 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEABB11CC4284FD98D7AD729 /* Octicons.ttf */; };
 /* End PBXBuildFile section */
@@ -77,23 +77,23 @@
 		2039FD6D831A629B5346610F /* Pods-PontoMaisX-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PontoMaisX-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PontoMaisX-tvOSTests/Pods-PontoMaisX-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* PontoMaisX-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PontoMaisX-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* PontoMaisX-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PontoMaisX-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		340091840E5C1F30A43BE5CD /* libPods-PontoMaisX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PontoMaisX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C026730FE594126A6B56090 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		544FD9AC573476E969E10B3D /* libPods-PontoMaisXTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PontoMaisXTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55419E6F3996C7D9731B5557 /* libPods-PontoMaisX-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PontoMaisX-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D57203C64FC7594C7D095D /* Pods_PontoMaisXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PontoMaisXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2B7302363946B39612D0B5 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		636C87B17D554E66BE4CA900 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		695E0F3E1857A451028377CA /* Pods-PontoMaisX-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PontoMaisX-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PontoMaisX-tvOS/Pods-PontoMaisX-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7AE8211B6744FCF84763029C /* Pods_PontoMaisX_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PontoMaisX_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD50285DEEE02BC3F1FB02A /* Pods-PontoMaisX-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PontoMaisX-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PontoMaisX-tvOS/Pods-PontoMaisX-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		7FDE82C3CD8B4F8288D53E7B /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		86D3E84359747C4FB1C2564E /* Pods_PontoMaisX_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PontoMaisX_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFEE25B28A54006A6231947 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		97EB85B943E857615AF9FEE2 /* Pods-PontoMaisX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PontoMaisX.release.xcconfig"; path = "Target Support Files/Pods-PontoMaisX/Pods-PontoMaisX.release.xcconfig"; sourceTree = "<group>"; };
 		A6BBF488F4EC4F94AD0153E6 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		A95D7ADEAB1AAA36D0E0931F /* Pods_PontoMaisX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PontoMaisX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA2937224E947E99F484766 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		CEABB11CC4284FD98D7AD729 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		D09535DE2BD59672A557EB77 /* Pods-PontoMaisXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PontoMaisXTests.debug.xcconfig"; path = "Target Support Files/Pods-PontoMaisXTests/Pods-PontoMaisXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7A054C891E443EDA9D1F3E7 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		E280721791879E1C23ACF51B /* libPods-PontoMaisX-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PontoMaisX-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EEF03B9C8AF3A426330BEDD8 /* Pods-PontoMaisX-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PontoMaisX-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PontoMaisX-tvOSTests/Pods-PontoMaisX-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C646776CEFDA258F53A649 /* libPods-PontoMaisXTests.a in Frameworks */,
+				E70183CA917B8C3ACFF65940 /* Pods_PontoMaisXTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A131806C24FBFFA95EE5AA /* libPods-PontoMaisX.a in Frameworks */,
+				DD6C994D2335CCCE467FB33F /* Pods_PontoMaisX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E989FD99F3696CD4BFBB3B5 /* libPods-PontoMaisX-tvOS.a in Frameworks */,
+				E2E54708DD8D223BB4BBA221 /* Pods_PontoMaisX_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DADFD1502BE68F54D3BC0B91 /* libPods-PontoMaisX-tvOSTests.a in Frameworks */,
+				EA4A31F5BA903ADE440F437D /* Pods_PontoMaisX_tvOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,10 +173,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				340091840E5C1F30A43BE5CD /* libPods-PontoMaisX.a */,
-				E280721791879E1C23ACF51B /* libPods-PontoMaisX-tvOS.a */,
-				55419E6F3996C7D9731B5557 /* libPods-PontoMaisX-tvOSTests.a */,
-				544FD9AC573476E969E10B3D /* libPods-PontoMaisXTests.a */,
+				A95D7ADEAB1AAA36D0E0931F /* Pods_PontoMaisX.framework */,
+				7AE8211B6744FCF84763029C /* Pods_PontoMaisX_tvOS.framework */,
+				86D3E84359747C4FB1C2564E /* Pods_PontoMaisX_tvOSTests.framework */,
+				53D57203C64FC7594C7D095D /* Pods_PontoMaisXTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				7747174B6FBDB0B3A3931424 /* [CP] Copy Pods Resources */,
+				83E27FC3F953413D54862C52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -505,52 +505,82 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7747174B6FBDB0B3A3931424 /* [CP] Copy Pods Resources */ = {
+		83E27FC3F953413D54862C52 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PontoMaisX/Pods-PontoMaisX-resources.sh",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_ROOT}/Target Support Files/Pods-PontoMaisX/Pods-PontoMaisX-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCAsyncStorage/RNCAsyncStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/RNGestureHandler/RNGestureHandler.framework",
+				"${BUILT_PRODUCTS_DIR}/RNReanimated/RNReanimated.framework",
+				"${BUILT_PRODUCTS_DIR}/RNScreens/RNScreens.framework",
+				"${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
+				"${BUILT_PRODUCTS_DIR}/React-CoreModules/CoreModules.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTActionSheet/RCTActionSheet.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTAnimation/RCTAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTBlob/RCTBlob.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTImage/RCTImage.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTLinking/RCTLinking.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTNetwork/RCTNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTSettings/RCTSettings.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTText/RCTText.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTVibration/RCTVibration.framework",
+				"${BUILT_PRODUCTS_DIR}/React-cxxreact/cxxreact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsi/jsi.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsiexecutor/jsireact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-react-native/lottie_react_native.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-geolocation/react_native_geolocation.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BVLinearGradient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCAsyncStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNGestureHandler.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNReanimated.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNScreens.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNVectorIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTActionSheet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTBlob.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTLinking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTSettings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTVibration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cxxreact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsireact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/lottie_react_native.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_geolocation.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PontoMaisX/Pods-PontoMaisX-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PontoMaisX/Pods-PontoMaisX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1737377F54FEBFD92A684AF /* [CP] Check Pods Manifest.lock */ = {
