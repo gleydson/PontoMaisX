@@ -7,7 +7,7 @@ export default () => ({
     timing: Animated.timing,
     useNativeDriver: true,
   },
-  screenInterpolator: (sceneProps) => {
+  screenInterpolator: sceneProps => {
     const { layout, position, scene } = sceneProps;
 
     const thisSceneIndex = scene.index;
