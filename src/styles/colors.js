@@ -1,5 +1,6 @@
 export default {
-  primary: '#1e1d43',
+  primary: '#806bcb',
+  secondary: '#3ab6ac',
 
   bgModal: '#deebf1',
   borderModal: '#636a7c',

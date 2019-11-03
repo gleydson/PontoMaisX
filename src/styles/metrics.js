@@ -6,5 +6,5 @@ export default {
   padding: '20px',
   widthScreen: width,
   heightScreen: height,
-  borderRadius: '5px'
+  borderRadius: '5px',
 };
