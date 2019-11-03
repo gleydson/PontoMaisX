@@ -7,9 +7,8 @@ import createSagaMiddleware from 'redux-saga';
 import reducers from './ducks';
 import sagas from './sagas';
 
-
 const persistConfig = {
-  key: 'ReactNativeTemplateGSR',
+  key: '@PontoMaisX',
   storage: AsyncStorage,
   transforms: [SeamLessImmutablePersistenceTransform],
 };
@@ -27,10 +26,10 @@ middlewares.push(sagaMiddleware);
 
 const composer = __DEV__
   ? compose(
-    applyMiddleware(...middlewares),
-    // eslint-disable-next-line no-console
-    console.tron.createEnhancer(),
-  )
+      applyMiddleware(...middlewares),
+      // eslint-disable-next-line no-console
+      console.tron.createEnhancer()
+    )
   : compose(applyMiddleware(...middlewares));
 
 const store = createStore(persistedReducer, composer);
