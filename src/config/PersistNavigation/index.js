@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-community/async-storage';
 
 const persistenceKey = 'persistenceKey';
-const persistNavigationState = async (navState) => {
+const persistNavigationState = async navState => {
   try {
     await AsyncStorage.setItem(persistenceKey, JSON.stringify(navState));
   } catch (err) {
@@ -15,8 +15,10 @@ const loadNavigationState = async () => {
 };
 
 export default function getPersistenceFunctions() {
-  return __DEV__ ? {
-    persistNavigationState,
-    loadNavigationState,
-  } : undefined;
+  return __DEV__
+    ? {
+        persistNavigationState,
+        loadNavigationState,
+      }
+    : undefined;
 }
