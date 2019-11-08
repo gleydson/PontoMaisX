@@ -37,8 +37,8 @@ export default function SignIn({ navigation }) {
   );
   const isLogged = useSelector(SignInSelectors.isLogged);
 
-  const [email, setEmail] = useState('grodrigues@greenmile.com.br');
-  const [password, setPassword] = useState('js22a@11');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
   const [widthSubmit] = useState(new Animated.Value(metrics.inputWidth));
