@@ -1,14 +1,10 @@
-import axios from 'axios';
-import { call, put, all, takeLatest, select } from 'redux-saga/effects';
+import { call, put, all, takeLatest } from 'redux-saga/effects';
 
 import * as ApiService from '~/services/api';
 import NavigationService from '~/services/navigation';
-import { SIGN_IN, HOME } from '~/services/screenName';
+import { SIGN_IN } from '~/services/screenName';
 import { Creators as CompanyCreators } from '~/store/ducks/company';
-import {
-  Creators as EmployeeCreators,
-  Selectors as EmployeeSelectors,
-} from '~/store/ducks/employee';
+import { Creators as EmployeeCreators } from '~/store/ducks/employee';
 import {
   Types as SignInTypes,
   Creators as SignInCreators,
@@ -66,7 +62,7 @@ function* getSessionInformation(action) {
 
     yield put(CompanyCreators.addCompanyInformation(company));
     yield put(EmployeeCreators.addEmployeeInformation(employee));
-    yield put(SignInCreators.sessionSuccess());
+    yield put(SignInCreators.sessionSuccess(employee.firstName));
   } catch (error) {
     yield put(SignInCreators.sessionFailure(error));
   }
@@ -77,18 +73,17 @@ function* logout() {
   yield put(SignInCreators.resetAfterLogout());
 }
 
-function* getGenderOfEmployee() {
+function* getGenderOfEmployee(action) {
+  const { employeeFirstName } = action;
+
   try {
-    const nameEmployee = yield select(EmployeeSelectors.firstName);
-    const { gender } = yield call(
-      axios({
-        method: 'get',
-        url: `https://genderapi.io/api/?name=${nameEmployee}`,
-      })
-    );
-    yield put(EmployeeCreators.addGender(gender));
+    const {
+      data: { gender },
+    } = yield call(ApiService.getGender, employeeFirstName);
+
+    yield put(EmployeeCreators.addGenderSuccess(gender));
   } catch (error) {
-    // console.tron.log(error);
+    yield put(EmployeeCreators.addGenderFailure(error));
   }
 }
 

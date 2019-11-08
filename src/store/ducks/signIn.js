@@ -6,7 +6,7 @@ export const { Types, Creators } = createActions({
   loginSuccess: ['uid', 'accessToken', 'client'],
   loginFailure: ['error'],
   logout: null,
-  sessionSuccess: null,
+  sessionSuccess: ['employeeFirstName'],
   sessionFailure: ['error'],
   resetAfterLogout: null,
   setIsLogged: ['status'],

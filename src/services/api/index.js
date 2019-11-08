@@ -1,8 +1,16 @@
 import axios from 'axios';
 
+const apiGender = axios.create({
+  baseURL: 'https://genderapi.io/api',
+});
+
 const api = axios.create({
   baseURL: 'https://api.pontomais.com.br/api',
 });
+
+export function getGender(name) {
+  return apiGender.get(`/?name=${name}`);
+}
 
 export function signIn(email, password) {
   return api.post('/auth/sign_in', { email, password });
