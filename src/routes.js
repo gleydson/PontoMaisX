@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -11,15 +10,6 @@ import { SignIn, Home, Profile, Tour } from '~/screens';
 import t from '~/services/i18n';
 import { colors } from '~/styles';
 
-/**
- * ,
-    navigationOptions: {
-      tabBarLabel: t('home'),
-      tabBarIcon: ({ tintColor }) => (
-        <Icon name="gamepad-variant" color={tintColor} size={24} />
-      ),
-    }
- */
 const TabNavigator = createMaterialTopTabNavigator(
   {
     Home: {
@@ -34,15 +24,15 @@ const TabNavigator = createMaterialTopTabNavigator(
   },
   {
     tabBarOptions: {
-      activeTintColor: '#fff',
+      activeTintColor: colors.white,
       inactiveTintColor: '#ddd',
       style: {
         backgroundColor: colors.secondary,
-        borderTopWidth: StyleSheet.hairlineWidth,
-        borderTopColor: '#fff',
+        borderTopWidth: 0,
       },
       indicatorStyle: {
-        backgroundColor: '#fff',
+        backgroundColor: colors.secondary,
+        borderWidth: 0,
       },
       showIcon: true,
     },
@@ -50,23 +40,17 @@ const TabNavigator = createMaterialTopTabNavigator(
   }
 );
 
-const AppNavigator = createSwitchNavigator(
-  {
-    Tour,
-    SignIn,
-    Main: createStackNavigator(
-      { Tab: TabNavigator, Profile },
-      {
-        headerMode: 'none',
-        navigationOptions: {},
-        transitionConfig: leftTransition,
-      }
-    ),
-  },
-  {
-    initialRouteName: 'Tour',
-    transitionConfig: leftTransition,
-  }
-);
+const AppNavigator = createSwitchNavigator({
+  Tour,
+  SignIn,
+  Main: createStackNavigator(
+    { Tab: TabNavigator, Profile },
+    {
+      headerMode: 'none',
+      navigationOptions: {},
+      transitionConfig: leftTransition,
+    }
+  ),
+});
 
 export default createAppContainer(AppNavigator);
