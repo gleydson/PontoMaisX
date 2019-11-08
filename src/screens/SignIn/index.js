@@ -6,7 +6,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import logo from '~/assets/images/logo.png';
 import check from '~/assets/lotties/success.json';
 import t from '~/services/i18n';
-import screens from '~/services/screenName';
+import NavigationService from '~/services/navigation';
+import { HOME } from '~/services/screenName';
 import {
   Creators as SignInActions,
   Selectors as SignInSelectors,
@@ -31,6 +32,9 @@ import {
 
 export default function SignIn({ navigation }) {
   const dispatch = useDispatch();
+  const isShowCheckAnimation = useSelector(
+    SignInSelectors.isShowCheckAnimation
+  );
   const isLogged = useSelector(SignInSelectors.isLogged);
 
   const [email, setEmail] = useState('grodrigues@greenmile.com.br');
@@ -51,31 +55,31 @@ export default function SignIn({ navigation }) {
   const submitStyle = { width: widthSubmit, backgroundColor: colorInterpolate };
   const textSubmitStyle = { opacity: opacityAnimation };
 
-  function handleCheckAnimation() {
-    Animated.timing(progressCheckAnimation, {
-      toValue: 1,
-      duration: 1100,
-      easing: Easing.linear,
-    }).start(({ finished }) => {
-      if (finished) {
-        navigation.navigate(screens.HOME);
-      }
-    });
-  }
-
   useEffect(() => {
     Keyboard.addListener('keyboardDidShow', () => setIsKeyboardOpen(true));
     Keyboard.addListener('keyboardDidHide', () => setIsKeyboardOpen(false));
 
+    if (isShowCheckAnimation) {
+      Animated.timing(progressCheckAnimation, {
+        toValue: 1,
+        duration: 1100,
+        easing: Easing.linear,
+      }).start(({ finished }) => {
+        if (finished) {
+          dispatch(SignInActions.setIsLogged(true));
+        }
+      });
+    }
+
     if (isLogged) {
-      handleCheckAnimation();
+      NavigationService.navigate(HOME);
     }
 
     return () => {
       Keyboard.removeListener('keyboardDidShow');
       Keyboard.removeListener('keyboardDidHide');
     };
-  }, [isLogged]);
+  }, [isShowCheckAnimation, isLogged]);
 
   function handleSubmit() {
     Keyboard.dismiss();
@@ -120,12 +124,12 @@ export default function SignIn({ navigation }) {
           value={password}
         />
         <SubmitContainer onPress={handleSubmit}>
-          {isLogged ? (
+          {isShowCheckAnimation ? (
             <Animation
               source={check}
-              autoPlay
               resizeMode="contain"
               loop={false}
+              progress={progressCheckAnimation}
             />
           ) : (
             <Submit style={submitStyle}>

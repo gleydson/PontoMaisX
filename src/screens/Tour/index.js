@@ -8,7 +8,7 @@ import link from '~/assets/lotties/link.json';
 import touch from '~/assets/lotties/touch.json';
 import workingRoom from '~/assets/lotties/working-room.json';
 import t from '~/services/i18n';
-import screen from '~/services/screenName';
+import { SIGN_IN } from '~/services/screenName';
 
 import {
   Container,
@@ -62,7 +62,7 @@ function renderItem({ item: { key, title, description, lottieFile } }) {
 
 export default function Tour({ navigation }) {
   function goToSignInScreen() {
-    navigation.navigate(screen.SIGN_IN);
+    navigation.navigate(SIGN_IN);
   }
   return (
     <Container>

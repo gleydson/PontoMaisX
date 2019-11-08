@@ -3,7 +3,7 @@ import { call, put, all, takeLatest, select } from 'redux-saga/effects';
 
 import * as ApiService from '~/services/api';
 import NavigationService from '~/services/navigation';
-import screens from '~/services/screenName';
+import { SIGN_IN, HOME } from '~/services/screenName';
 import { Creators as CompanyCreators } from '~/store/ducks/company';
 import {
   Creators as EmployeeCreators,
@@ -73,7 +73,7 @@ function* getSessionInformation(action) {
 }
 
 function* logout() {
-  NavigationService.navigate(screens.SIGN_IN);
+  NavigationService.navigate(SIGN_IN);
   yield put(SignInCreators.resetAfterLogout());
 }
 

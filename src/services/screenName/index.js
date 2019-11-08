@@ -1,5 +1,3 @@
-export default {
-  SIGN_IN: 'SignIn',
-  HOME: 'Home',
-  PROFILE: 'Profile',
-};
+export const SIGN_IN = 'SignIn';
+export const HOME = 'Home';
+export const PROFILE = 'Profile';
