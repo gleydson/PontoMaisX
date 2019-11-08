@@ -26,10 +26,10 @@ middlewares.push(sagaMiddleware);
 
 const composer = __DEV__
   ? compose(
-      applyMiddleware(...middlewares),
-      // eslint-disable-next-line no-console
-      console.tron.createEnhancer()
-    )
+    applyMiddleware(...middlewares),
+    // eslint-disable-next-line no-console
+    console.tron.createEnhancer()
+  )
   : compose(applyMiddleware(...middlewares));
 
 const store = createStore(persistedReducer, composer);

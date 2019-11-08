@@ -67,8 +67,6 @@ function* getSessionInformation(action) {
     yield put(CompanyCreators.addCompanyInformation(company));
     yield put(EmployeeCreators.addEmployeeInformation(employee));
     yield put(SignInCreators.sessionSuccess());
-
-    NavigationService.navigate(screens.HOME);
   } catch (error) {
     yield put(SignInCreators.sessionFailure(error));
   }
@@ -90,7 +88,7 @@ function* getGenderOfEmployee() {
     );
     yield put(EmployeeCreators.addGender(gender));
   } catch (error) {
-    console.tron.log(error);
+    // console.tron.log(error);
   }
 }
 

@@ -43,15 +43,18 @@ export const Email = styled.TextInput.attrs({
   elevation: 2,
   keyboardType: 'email-address',
   placeholderTextColor: '#999',
+  autoCapitalize: 'none',
+  autoCorrect: false,
+  autoCompleteType: 'off',
 })`
   background-color: ${colors.white};
-  width: 90%;
+  width: ${metrics.inputWidth};
   height: 50px;
   border-radius: 30px;
   margin-bottom: 20px;
   font-size: ${fonts.medium};
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
 `;
 
 export const Password = styled.TextInput.attrs({
@@ -66,15 +69,17 @@ export const Password = styled.TextInput.attrs({
   secureTextEntry: true,
   password: true,
   placeholderTextColor: '#999',
+  autoCapitalize: 'none',
+  autoCorrect: false,
 })`
   background-color: ${colors.white};
-  width: 90%;
+  width: ${metrics.inputWidth};
   height: 50px;
   border-radius: 30px;
   margin-bottom: 20px;
   font-size: ${fonts.medium};
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
 `;
 
 export const SubmitContainer = styled.TouchableOpacity`
@@ -129,3 +134,7 @@ export const Animation = styled(LottieView)`
   width: 90px;
   height: 90px;
 `;
+
+export const Loader = styled.ActivityIndicator.attrs({
+  size: 'large',
+})``;

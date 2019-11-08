@@ -15,10 +15,11 @@ const INITIAL_STATE = Immutable({
   isLogged: false,
 });
 
-const loginSuccess = (state = INITIAL_STATE) => state.merge({ isLogged: true });
+const sessionSuccess = (state = INITIAL_STATE) =>
+  state.merge({ isLogged: true });
 
 export default createReducer(INITIAL_STATE, {
-  [Types.LOGIN_SUCCESS]: loginSuccess,
+  [Types.SESSION_SUCCESS]: sessionSuccess,
 });
 
 export const Selectors = {
