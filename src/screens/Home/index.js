@@ -1,5 +1,5 @@
 import { shape, func } from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 import { Animated } from 'react-native';
 import { PanGestureHandler, State } from 'react-native-gesture-handler';
 import { useSelector, useDispatch } from 'react-redux';
@@ -25,14 +25,14 @@ import {
 
 export default function Home({ navigation }) {
   const dispatch = useDispatch();
-  let offset = 0;
-  const translateY = new Animated.Value(0);
   const profileImage = useSelector(EmployeeSelectors.photoSmall);
+
+  let offset = 0;
+  const [translateY] = useState(new Animated.Value(0));
   const animatedEvent = Animated.event(
     [{ nativeEvent: { translationY: translateY } }],
     { useNativeDriver: true }
   );
-
   const translateYInterpolate = translateY.interpolate({
     inputRange: [0, 500],
     outputRange: [0, 500],
@@ -45,7 +45,7 @@ export default function Home({ navigation }) {
       const { translationY } = event.nativeEvent;
       offset += translationY;
 
-      if (translationY >= 200) {
+      if (translationY >= 250) {
         opened = true;
       } else {
         translateY.setValue(offset);
