@@ -7,4 +7,5 @@ export default {
   widthScreen: width,
   heightScreen: height,
   borderRadius: '5px',
+  inputWidth: width * 0.8,
 };
