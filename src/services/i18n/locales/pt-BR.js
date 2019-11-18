@@ -8,4 +8,5 @@ export default {
   done: 'Pronto',
   home: 'Início',
   profile: 'Perfil',
+  yourPoints: 'Seus pontos',
 };
