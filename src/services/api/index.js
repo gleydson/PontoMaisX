@@ -57,6 +57,17 @@ export function wordDays(
   );
 }
 
+export function workDay(date, uid, accessToken, client) {
+  return api.get(`/time_card_control/current/work_days/${date}`, {
+    headers: {
+      uid,
+      'access-token': accessToken,
+      'token-type': 'Bearer',
+      client,
+    },
+  });
+}
+
 // address: 'Av. Washington Soares, 909 - Edson Queiroz, Fortaleza - CE, 60811-341, Brasil'
 
 export function hitPoint(
