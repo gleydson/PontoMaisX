@@ -28,7 +28,7 @@ export const Icon = styled(MaterialIcon).attrs({
   color: colors.white,
 })``;
 
-export const RightImage = styled.TouchableOpacity.attrs({
+export const RightButton = styled.TouchableOpacity.attrs({
   hitSlop: { top: 20, bottom: 20, left: 20, right: 20 },
 })`
   width: 30px;
