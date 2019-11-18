@@ -1,8 +1,9 @@
 import { Animated } from 'react-native';
+import ShimmerPlaceHolder from 'react-native-shimmer-placeholder';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import styled from 'styled-components/native';
 
-import { colors } from '~/styles';
+import { colors, fonts } from '~/styles';
 
 export const Container = styled.View`
   flex: 1;
@@ -46,6 +47,7 @@ export const TextDate = styled.Text`
   color: #fff;
   margin-bottom: 15px;
   font-weight: bold;
+  text-transform: capitalize;
 `;
 
 export const ContainerDaysOfWeek = styled.View`
@@ -66,13 +68,15 @@ export const ContainerInner = styled.View.attrs({
   flex: 3;
   max-height: 550px;
   z-index: 5;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Content = styled(Animated.View)`
   flex: 1;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  background-color: #fff;
+  background-color: ${colors.white};
   height: 100%;
   margin: 0 20px;
   position: absolute;
@@ -92,10 +96,36 @@ export const Line = styled.View`
 
 export const ContentInner = styled.View`
   flex: 1;
-  justify-content: space-between;
   padding: 10px;
 `;
 
-export const Text = styled.Text``;
+export const ContainerPoint = styled.View`
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3px;
+`;
+
+export const TitleContent = styled.Text`
+  font-size: ${fonts.medium};
+  color: ${colors.black};
+  font-weight: bold;
+`;
+
+export const Text = styled.Text`
+  margin-left: 5px;
+  font-size: ${fonts.medium};
+  color: ${colors.black};
+`;
+
+export const PointShimmer = styled(ShimmerPlaceHolder)`
+  width: 100%;
+  margin-top: 5px;
+  font-size: ${fonts.medium};
+`;
 
 export const Icon = styled(MaterialIcon)``;
+
+export const IntervalText = styled.Text`
+  font-size: ${fonts.medium};
+  color: ${colors.regular};
+`;
