@@ -1,19 +1,21 @@
-import { bool, string, number, func } from 'prop-types';
+import { bool, string, number, func, oneOfType } from 'prop-types';
 import React from 'react';
 
-import { Container, DayNumber, DayWeek } from './styled';
+import { Button, Container, DayNumber, DayWeek } from './styled';
 
 export default function DayButton({ dayNumber, dayWeek, isSelected, action }) {
   return (
-    <Container selected={isSelected}>
-      <DayNumber>{dayNumber}</DayNumber>
-      <DayWeek>{dayWeek}</DayWeek>
-    </Container>
+    <Button onPress={action}>
+      <Container selected={isSelected}>
+        <DayNumber>{dayNumber}</DayNumber>
+        <DayWeek>{dayWeek}</DayWeek>
+      </Container>
+    </Button>
   );
 }
 
 DayButton.propTypes = {
-  dayNumber: number.isRequired,
+  dayNumber: oneOfType([number, string]).isRequired,
   dayWeek: string.isRequired,
   isSelected: bool,
   action: func,
