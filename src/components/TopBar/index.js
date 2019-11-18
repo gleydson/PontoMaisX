@@ -7,7 +7,7 @@ import {
   Icon,
   ContainerTitle,
   TitleScreen,
-  RightImage,
+  RightButton,
   Image,
 } from './styled';
 
@@ -27,13 +27,9 @@ export default function TopBar({
       <ContainerTitle>
         <TitleScreen>{titleScreen}</TitleScreen>
       </ContainerTitle>
-      <RightImage onPress={rightAction}>
-        {(image || rightIcon) && image ? (
-          <Image source={{ uri: image }} />
-        ) : (
-          <Icon name={rightIcon} />
-        )}
-      </RightImage>
+      <RightButton onPress={rightAction}>
+        {image ? <Image source={{ uri: image }} /> : <Icon name={rightIcon} />}
+      </RightButton>
     </TopBarContainer>
   );
 }
