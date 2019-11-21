@@ -40,17 +40,30 @@ const TabNavigator = createMaterialTopTabNavigator(
   }
 );
 
-const AppNavigator = createSwitchNavigator({
-  Tour,
-  SignIn,
-  Main: createStackNavigator(
-    { Tab: TabNavigator, Profile },
-    {
-      headerMode: 'none',
-      navigationOptions: {},
-      transitionConfig: leftTransition,
-    }
-  ),
-});
+function getInitialRouteName(signed) {
+  if (signed) {
+    return 'Main';
+  }
+  return 'SignIn';
+}
 
-export default createAppContainer(AppNavigator);
+export default signed =>
+  createAppContainer(
+    createSwitchNavigator(
+      {
+        Tour,
+        SignIn,
+        Main: createStackNavigator(
+          { Tab: TabNavigator, Profile },
+          {
+            headerMode: 'none',
+            navigationOptions: {},
+            transitionConfig: leftTransition,
+          }
+        ),
+      },
+      {
+        initialRouteName: getInitialRouteName(signed),
+      }
+    )
+  );
