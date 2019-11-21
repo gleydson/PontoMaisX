@@ -55,7 +55,7 @@ export const ContainerDaysOfWeek = styled.View`
   justify-content: space-between;
 `;
 
-export const ContainerInner = styled.View.attrs({
+export const ContainerPoints = styled.View.attrs({
   shadowColor: '#000',
   shadowOffset: {
     width: 0,
@@ -126,6 +126,7 @@ export const PointShimmer = styled(ShimmerPlaceHolder)`
 export const Icon = styled(MaterialIcon)``;
 
 export const IntervalText = styled.Text`
-  font-size: ${fonts.medium};
+  font-size: ${fonts.smaller};
   color: ${colors.regular};
+  text-transform: uppercase;
 `;
