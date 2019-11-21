@@ -1,4 +1,4 @@
-import { object, shape, func, string } from 'prop-types';
+import { object, string } from 'prop-types';
 import React from 'react';
 import OnBoarding from 'react-native-app-intro-slider';
 import uuid from 'uuid/v4';
@@ -8,6 +8,7 @@ import link from '~/assets/lotties/link.json';
 import touch from '~/assets/lotties/touch.json';
 import workingRoom from '~/assets/lotties/working-room.json';
 import t from '~/services/i18n';
+import NavigationService from '~/services/navigation';
 import { SIGN_IN } from '~/services/screenName';
 
 import {
@@ -60,9 +61,9 @@ function renderItem({ item: { key, title, description, lottieFile } }) {
   );
 }
 
-export default function Tour({ navigation }) {
+export default function Tour() {
   function goToSignInScreen() {
-    navigation.navigate(SIGN_IN);
+    NavigationService.navigate(SIGN_IN);
   }
   return (
     <Container>
@@ -81,12 +82,6 @@ export default function Tour({ navigation }) {
     </Container>
   );
 }
-
-Tour.propTypes = {
-  navigation: shape({
-    navigate: func,
-  }).isRequired,
-};
 
 renderItem.propTypes = {
   item: object.isRequired,
