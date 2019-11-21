@@ -49,7 +49,7 @@ export default function SignIn({ navigation }) {
 
   const colorInterpolate = progressButtonAnimation.interpolate({
     inputRange: [0, 1],
-    outputRange: [colors.secondary, '#3bbd5e'],
+    outputRange: [colors.secondary, colors.check],
     extrapolate: 'clamp',
   });
   const submitStyle = { width: widthSubmit, backgroundColor: colorInterpolate };
