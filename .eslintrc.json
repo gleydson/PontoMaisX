@@ -79,7 +79,8 @@
     "arrow-parens": "off",
     "react/jsx-props-no-spreading": "off",
     "no-prototype-builtins": "off",
-    "camelcase": "off"
+    "camelcase": "off",
+    "no-plusplus": "off"
   },
   "settings": {
     "import/resolver": {
