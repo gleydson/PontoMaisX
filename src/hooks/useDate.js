@@ -22,10 +22,11 @@ function getFormmatedDate(date) {
 }
 
 function getHourRange(firstDate, secondDate) {
-  return `${formatDistance(firstDate, secondDate, {
+  const distance = formatDistance(firstDate, secondDate, {
     locale: getCurrentLanguage(),
     includeSeconds: true,
-  })} de intervalo`;
+  });
+  return `${distance} de intervalo`;
 }
 
 function getFormatDateAndTime(date, time) {
