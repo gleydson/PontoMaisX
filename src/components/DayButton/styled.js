@@ -21,7 +21,7 @@ export const Container = styled.View.attrs(
     selected ? colors.secondary : 'rgba(255, 255, 255, 0.3)'};
   padding: 5px;
   width: 45px;
-  height: 55px;
+  height: 60px;
   align-items: center;
   border-radius: 13px;
 `;
@@ -38,4 +38,14 @@ export const DayWeek = styled.Text`
   color: ${colors.white};
   text-transform: capitalize;
   text-align: center;
+`;
+
+export const Indicator = styled.View`
+  background-color: ${colors.white};
+  width: 10px;
+  height: 2px;
+  border-radius: 2px;
+  position: absolute;
+  top: 4px;
+  margin: 0 auto;
 `;
